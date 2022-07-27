@@ -1,0 +1,9 @@
+{
+  "listen_host": "localhost",
+  "listen_port": 10001,
+  "log_level": "debug",
+  "http_read_timeout_sec": 5,
+  "http_write_timeout_sec": 5,
+  "graceful_shutdown_timeout_sec": 5,
+  "path_to_logs": "logs/log"
+}
