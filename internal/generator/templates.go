@@ -23,11 +23,11 @@ import (
 	"net/http"
 	"time"
 
-	scratchConfig "github.com/causelovem/scratch/pkg/config"
-	"github.com/causelovem/scratch/pkg/logger"
-	scratchMetrics "github.com/causelovem/scratch/pkg/metrics"
-	scratchRouter "github.com/causelovem/scratch/pkg/router"
-	scratchServer "github.com/causelovem/scratch/pkg/server"
+	scratchConfig "github.com/levinishka/scratch/pkg/config"
+	"github.com/levinishka/scratch/pkg/logger"
+	scratchMetrics "github.com/levinishka/scratch/pkg/metrics"
+	scratchRouter "github.com/levinishka/scratch/pkg/router"
+	scratchServer "github.com/levinishka/scratch/pkg/server"
 	cfg "{{ .RepoPath }}/{{ .ProjectName }}/internal/config"
 	"{{ .RepoPath }}/{{ .ProjectName }}/internal/handler"
 )
@@ -339,7 +339,7 @@ func handleError(respWriter http.ResponseWriter, status int, logger *zap.Sugared
 // 	[]string{"label"},
 // )
 //
-// You can check basics metrics in github.com/causelovem/scratch/pkg/metrics/metrics.go
+// You can check basics metrics in github.com/levinishka/scratch/pkg/metrics/metrics.go
 
 `,
 	},

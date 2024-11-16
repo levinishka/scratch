@@ -3,8 +3,8 @@ package router
 import (
 	"net/http/pprof"
 
-	"github.com/causelovem/scratch/pkg/metrics"
 	"github.com/gorilla/mux"
+	"github.com/levinishka/scratch/pkg/metrics"
 )
 
 // NewRouter creates new mux router

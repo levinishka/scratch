@@ -3,7 +3,7 @@ package config
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"os"
 )
 
 // NewConfig reads config from configFile
@@ -11,7 +11,7 @@ import (
 func NewConfig(configFile string, config interface{}) error {
 	const fn = "config.NewConfig"
 
-	file, err := ioutil.ReadFile(configFile)
+	file, err := os.ReadFile(configFile)
 	if err != nil {
 		return fmt.Errorf("%s: unable to read config file: %v", fn, err)
 	}

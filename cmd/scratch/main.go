@@ -6,14 +6,14 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/causelovem/scratch/internal/generator"
+	"github.com/levinishka/scratch/internal/generator"
 )
 
 func main() {
 	projectPathPtr := flag.String("project", "", `path to new project directory
 (last element in a path - project name)`)
 	repoPtr := flag.String("repo", "", `git repository path for new project
-(e.g. github.com/causelovem)`)
+(e.g. github.com/levinishka)`)
 	helpPtr := flag.Bool("help", false, "prints this message")
 	flag.Parse()
 

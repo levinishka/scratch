@@ -5,7 +5,7 @@ Template Golang service and libraries.
 ### How to install
 Clone scratch
 ```shell
-git clone https://github.com/causelovem/scratch.git
+git clone https://github.com/levinishka/scratch.git
 ```
 You can either compile scratch by yourself:
 
@@ -47,11 +47,11 @@ Creates new project with name `testProject`
 ```shell
 # create project from scratch
 chmod a+x ./cmd/bin/scratch
-./cmd/bin/scratch -project /absolute/path/to/testProject -repo github.com/causelovem
+./cmd/bin/scratch -project /absolute/path/to/testProject -repo github.com/levinishka
 
 # initialize go modules
 cd /absolute/path/to/testProject
-go mod init github.com/causelovem/testProject
+go mod init github.com/levinishka/testProject
 go mod tidy
 
 # write logic and then test service
@@ -64,7 +64,7 @@ make test-run
 git init
 git add --all
 git commit -m "Initial Commit"
-git remote add origin github.com/causelovem/testProject.git
+git remote add origin github.com/levinishka/testProject.git
 git push -u origin master
 ```
 
@@ -76,4 +76,4 @@ Scratch contains some useful libraries which you can import and use:
 * `server` provides http server with graceful shutdown
 * `metrics` provides prometheus http server with basic service metrics
 
-To import any of these packages use `"github.com/causelovem/scratch/pkg/PACKAGE"`
+To import any of these packages use `"github.com/levinishka/scratch/pkg/PACKAGE"`
